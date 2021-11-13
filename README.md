@@ -1,1 +1,1 @@
-# EjercicioPoo
+Estoy ayudando a Carla con programacion que no le resulta facil y esta siendo bastante duro esto, va haciendo progresos, despacio pero va mejorando. Si las practicas se parecen a las mías es porque la voy explicando todo y como hacerlo más o menos aunque ya va pillando cosas y hace cosas por su cuenta. Seguiremos informando desde el frente de batalla.
