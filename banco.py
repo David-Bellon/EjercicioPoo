@@ -1,4 +1,7 @@
 import random
+from datetime import date
+
+
 
 
 def fechaAleatoria(año_minimo):
@@ -29,6 +32,8 @@ class cuentaBancaria:
 
     def retirar(self, cantidad):
         #Meter cosa de quitar 5% si fecha actual menor que fecha tope
+        if int(str(date.today()).replace("-", "")) - self.fechaTope <= 0:
+            cantidad = cantidad - ((cantidad * 5) / 100)
 
         if self.saldo - cantidad >= 0:
             self.saldo = self.saldo - cantidad
@@ -87,6 +92,7 @@ burgues = CuentaVip(3, "Carla Alvareda", 10000)
 
 obrero.cuenta.tranferir(burgues.cuenta, 2000)
 tontoDelFijo.cuenta.ingresar(250)
+tontoDelFijo.cuenta.retirar(250)
 burgues.cuenta.retirar(13000)
 
 obrero.cuenta.details()
